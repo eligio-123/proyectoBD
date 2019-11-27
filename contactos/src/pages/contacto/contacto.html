@@ -1,0 +1,40 @@
+<!--
+  Generated template for the ContactoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title style="background-color: #C8EAD3">{{nombre}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #C8EAD3">
+    <div class="img">
+        <img [src]="img">
+     </div>
+    <ion-list>
+        <ion-item style="background-color: #CEDADA">
+          <ion-icon name="mail" item-start></ion-icon>
+            {{correo}}
+        </ion-item>
+        <ion-item style="background-color: #CEDADA">
+            <ion-icon name="ios-call" item-start></ion-icon>
+              {{telefono}}
+          </ion-item>
+          <ion-item style="background-color: #CEDADA">
+          <ion-icon name="logo-facebook" item-start></ion-icon>
+            {{facebook}}
+        </ion-item>
+        <ion-item style="background-color: #CEDADA">
+            <ion-icon name="logo-twitter" item-start></ion-icon>
+              {{twitter}}
+          </ion-item>
+          <ion-item style="background-color: #CEDADA">
+          <ion-icon name="logo-instagram" item-start></ion-icon>
+            {{instagram}}
+        </ion-item>
+      </ion-list>
+
+</ion-content>

@@ -1,0 +1,55 @@
+<!--
+  Generated template for the MoviePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title style="background-color: #C8EAD3">
+        <h2 style="color: #695958">Agregar Contacto</h2>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #C8EAD3">
+  <ion-list>
+    <ion-item style="background-color: #CEDADA"> 
+      <ion-label floating>Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+
+    <ion-item style="background-color: #CEDADA">
+      <ion-label floating>Correo</ion-label>
+      <ion-input type="text" [(ngModel)]="correo"></ion-input>
+    </ion-item>
+
+    <ion-item style="background-color: #CEDADA">
+      <ion-label floating>Telefono</ion-label>
+      <ion-input type="text" [(ngModel)]="telefono"></ion-input>
+    </ion-item>
+
+    <ion-item style="background-color: #CEDADA">
+      <ion-label floating>Facebook</ion-label>
+      <ion-input type="text" [(ngModel)]="facebook"></ion-input>
+    </ion-item>
+
+    <ion-item style="background-color: #CEDADA">
+      <ion-label floating>Twitter</ion-label>
+      <ion-input type="text" [(ngModel)]="twitter"></ion-input>
+    </ion-item>
+
+    <ion-item style="background-color: #CEDADA">
+      <ion-label floating>Instagram</ion-label>
+      <ion-input type="text" [(ngModel)]="instagram"></ion-input>
+    </ion-item>
+
+    <ion-item style="background-color: #CEDADA">
+      <ion-label floating>Imagen</ion-label>
+      <ion-input type="text" [(ngModel)]="img"></ion-input>
+    </ion-item>
+
+
+  </ion-list>
+  <button ion-button block (click)="addMovie()">Add</button>
+</ion-content>

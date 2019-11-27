@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title style="background-color: #C8EAD3">
+      <h2 style="color: #695958">Mis Contactos</h2>
+    </ion-title >
+    <ion-buttons end>
+      <button ion-button icon-only (click)="clickAdd()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="clickAdd2()">
+          <ion-icon name="trash"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding padding style="background-color: #C8EAD3">
+  <ion-grid>
+    <ion-row style="background-color: #CEDADA">
+      <ion-col *ngFor="let movie of movies" >
+        <ion-item (click)="clickInfo(movie.nombre, movie.correo, movie.telefono, movie.facebook, movie.twitter, movie.instagram, movie.img)" style="background-color: #CEDADA">
+          <ion-thumbnail item-start >
+            <img src={{movie.img}}>
+          </ion-thumbnail>
+          <h2>{{movie.nombre}}</h2>
+          <p>{{movie.telefono}}</p>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

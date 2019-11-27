@@ -1,0 +1,25 @@
+GRANT ALL PRIVILEGES ON contactos.* TO 'alumno'@'localhost';
+
+
+CREATE DATABASE contactos;
+USE contactos;
+
+CREATE TABLE contacto(
+    id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(100),
+    telefono VARCHAR(20) NOT NULL,
+    facebook VARCHAR(50),
+    twitter VARCHAR(50),
+    instagram VARCHAR(50),
+    img VARCHAR(1000)
+); 
+
+
+
+
+INSERT INTO contacto(nombre, correo, telefono, facebook, twitter, instagram, img)
+VALUES('Juan Perez', 'juan.pp88@hotmail.com', '3347583746', 'juan.pp', '@perez.juan', 'juan.99', 'https://dce5jani6jm7e.cloudfront.net/images/elements/author.jpg');
+
+INSERT INTO contacto(nombre, correo, telefono, facebook, twitter, instagram, img)
+VALUES('Miguel Medina', 'miguel.medina11@hotmail.com', '3384759384', 'miguel.med', '@miguel.med99', 'medina.mig33', 'https://dce5jani6jm7e.cloudfront.net/images/elements/author.jpg');
