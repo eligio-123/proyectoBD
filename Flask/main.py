@@ -32,6 +32,7 @@ def peliculas():
         data = request.get_json()
         query = "DELETE FROM contacto WHERE nombre = %s"
         cursor.execute(query, (data['nombre']))
+        print("Salu2")
 
         bd.commit()
 
